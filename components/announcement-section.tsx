@@ -5,6 +5,7 @@ import { Megaphone, Download } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { supabase, type EventAnnouncement } from "@/lib/supabase"
+import { motion } from "framer-motion"
 
 export default function AnnouncementSection() {
   const [announcement, setAnnouncement] = useState<EventAnnouncement | null>(null)
@@ -50,42 +51,83 @@ export default function AnnouncementSection() {
   return (
     <section id="announcement" className="py-20 bg-white">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-12">
+        {/* Header Animation */}
+        <motion.div
+          className="text-center mb-12"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+        >
           <div className="flex items-center justify-center mb-4">
             <Megaphone className="h-8 w-8 text-saffron-600 mr-3" />
             <h2 className="text-4xl md:text-5xl font-bold text-gray-800">घोषणा (नवीन)</h2>
           </div>
           <p className="text-xl text-gray-600">आगामी कार्यक्रमों की जानकारी</p>
-        </div>
+        </motion.div>
 
-        <div className="max-w-4xl mx-auto">
+        {/* Announcement Card Animation */}
+        <motion.div
+          className="max-w-4xl mx-auto"
+          initial={{ opacity: 0, scale: 0.95 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          viewport={{ once: true }}
+          transition={{ delay: 0.3, duration: 0.7 }}
+        >
           <Card className="bg-gradient-to-r from-saffron-50 to-orange-50 border-saffron-200 shadow-xl">
             <CardContent className="p-8">
               <div className="text-center space-y-6">
-                <div className="bg-saffron-100 p-4 rounded-full w-20 h-20 mx-auto flex items-center justify-center">
+                <motion.div
+                  className="bg-saffron-100 p-4 rounded-full w-20 h-20 mx-auto flex items-center justify-center"
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: 0.5, duration: 0.6 }}
+                >
                   <Megaphone className="h-10 w-10 text-saffron-600" />
-                </div>
+                </motion.div>
 
-                <h3 className="text-3xl md:text-4xl font-bold text-gray-800">
+                <motion.h3
+                  className="text-3xl md:text-4xl font-bold text-gray-800"
+                  initial={{ opacity: 0, y: 10 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: 0.6, duration: 0.6 }}
+                >
                   {announcement?.event_name || "कोई घोषणा उपलब्ध नहीं"}
-                </h3>
+                </motion.h3>
 
                 {announcement && (
-                  <div className="space-y-4">
-                    <p className="text-lg text-gray-600">कार्यक्रम की विस्तृत जानकारी के लिए नीचे दिए गए लिंक पर क्लिक करें</p>
+                  <motion.div
+                    className="space-y-4"
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ delay: 0.7, duration: 0.6 }}
+                  >
+                    <p className="text-lg text-gray-600">
+                      कार्यक्रम की विस्तृत जानकारी के लिए नीचे दिए गए लिंक पर क्लिक करें
+                    </p>
 
                     <a href={announcement.pdf_link} target="_blank" rel="noopener noreferrer">
-                      <Button size="lg" className="bg-saffron-600 hover:bg-saffron-700 text-white px-8 py-3">
-                        <Download className="h-5 w-5 mr-2" />
-                        PDF डाउनलोड करें
-                      </Button>
+                      <motion.div
+                        initial={{ opacity: 0, y: 10 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ delay: 0.9, duration: 0.5 }}
+                      >
+                        <Button size="lg" className="bg-saffron-600 hover:bg-saffron-700 text-white px-8 py-3">
+                          <Download className="h-5 w-5 mr-2" />
+                          PDF डाउनलोड करें
+                        </Button>
+                      </motion.div>
                     </a>
-                  </div>
+                  </motion.div>
                 )}
               </div>
             </CardContent>
           </Card>
-        </div>
+        </motion.div>
       </div>
     </section>
   )
