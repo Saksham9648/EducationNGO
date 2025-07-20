@@ -10,7 +10,7 @@ const notoSansDevanagari = Noto_Sans_Devanagari({
 })
 
 export const metadata: Metadata = {
-  title: "v0 App",
+  title: "रामायण वैदिक एजुकेशन फाउंडेशन",
   description: "Created with v0",
   generator: "v0.dev",
 }
