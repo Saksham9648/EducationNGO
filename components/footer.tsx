@@ -93,9 +93,13 @@ export default function Footer() {
               <div className="flex items-start space-x-3">
                 <MapPin className="h-4 w-4 text-saffron-400 mt-1" />
                 <span className="text-gray-300">
-                  123, धर्म मार्ग
+                  रामायण भवन
                   <br />
-                  नई दिल्ली - 110001
+                  रामायण वैदिक एजुकेशन फाउंडेशन
+                  <br />
+                  उत्तर प्रदेश राज्य औद्योगिक विकास प्राधिकरण के सामने , नक्षत्र गार्डन, गोला रोड
+                  <br />
+                  लखीमपुर खीरी २६२७०१
                 </span>
               </div>
             </div>
