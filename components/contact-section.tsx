@@ -231,13 +231,13 @@ export default function ContactSection() {
                   <div className="mb-4 md:mb-0">
                     <h4 className="text-xl font-bold text-gray-800 mb-2">पूरा पता</h4>
                     <p className="text-gray-700">
-                      वैदिक शिक्षा संस्थान
+                      रामायण भवन
                       <br />
-                      123, धर्म मार्ग
+                      रामायण वैदिक एजुकेशन फाउंडेशन
                       <br />
-                      नई दिल्ली - 110001
+                      उत्तर प्रदेश राज्य औद्योगिक विकास प्राधिकरण के सामने , नक्षत्र गार्डन, गोला रोड
                       <br />
-                      भारत
+                      लखीमपुर खीरी २६२७०१
                     </p>
                   </div>
 
