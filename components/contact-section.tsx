@@ -156,6 +156,7 @@ export default function ContactSection() {
                     <div>
                       <h4 className="font-semibold text-gray-800">फोन</h4>
                       <p className="text-gray-600">+91 7307214280</p>
+                      {/* <p className="text-gray-600">+91 87654 32109</p> */}
                     </div>
                   </div>
 
@@ -183,7 +184,7 @@ export default function ContactSection() {
                         <br />
                         उत्तर प्रदेश राज्य औद्योगिक विकास प्राधिकरण के सामने , नक्षत्र गार्डन, गोला रोड
                         <br />
-                        लखीमपुर खीरी २६२७०१
+                        लखीमपुर खीरी २६२७०१
                       </p>
                     </div>
                   </div>
@@ -238,7 +239,7 @@ export default function ContactSection() {
                       <br />
                       उत्तर प्रदेश राज्य औद्योगिक विकास प्राधिकरण के सामने , नक्षत्र गार्डन, गोला रोड
                       <br />
-                      लखीमपुर खीरी २६२७०१
+                      लखीमपुर खीरी २६२७०१
                     </p>
                   </div>
 
