@@ -1,6 +1,16 @@
 "use client"
 
-import { CreditCard, Smartphone, Building2, Copy, QrCode } from "lucide-react"
+import {
+  CreditCard,
+  Smartphone,
+  Building2,
+  Copy,
+  QrCode,
+  Book,
+  BookText,
+  Feather,
+  Flame,
+} from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import Link from "next/link"
@@ -10,6 +20,29 @@ export default function PaymentPage() {
   const copyToClipboard = (text: string) => {
     navigator.clipboard.writeText(text)
   }
+
+  const infoItems = [
+    {
+      title: "चार वेद",
+      description: "ऋग्वेद, यजुर्वेद, सामवेद और अथर्ववेद — ये चार वेद हिंदू धर्म की आध्यात्मिक नींव हैं, जिनमें मंत्र, सूक्त और ज्ञान संग्रहित है।",
+      icon: Book,
+    },
+    {
+      title: "वेदांग",
+      description: "शिक्षा, कल्प, व्याकरण, निरुक्त, छंद और ज्योतिष — ये छह वेदांग वेदों को समझने और अनुष्ठानों के अभ्यास में सहायक हैं।",
+      icon: BookText,
+    },
+    {
+      title: "मुख्य उपनिषद",
+      description: "ईशा, केना, कठ, प्रश्न, मुंडक, मांडूक्य, तैत्तिरीय, ऐतरेय, छांदोग्य, बृहदारण्यक उपनिषद वेदांत दर्शन के आधार हैं।",
+      icon: Feather,
+    },
+    {
+      title: "सनातन पूजन विधि",
+      description: "शुद्धि, संकल्प, पंचामृत, पुष्प, दीप, नैवेद्य, आरती और विसर्जन जैसे चरण आत्म-शुद्धि और आध्यात्मिक विकास को दर्शाते हैं।",
+      icon: Flame,
+    },
+  ]
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-saffron-50 to-orange-50">
@@ -40,6 +73,28 @@ export default function PaymentPage() {
             </p>
           </div>
 
+          {/* Educational Info Section */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-12">
+            {infoItems.map((item, index) => (
+              <Card key={index} className="border-0 shadow-md bg-white">
+                <CardContent className="p-6">
+                  <div className="flex items-center mb-4">
+                    <div className="p-3 bg-saffron-100 rounded-full">
+                      <item.icon className="h-6 w-6 text-saffron-600" />
+                    </div>
+                    <h3 className="text-lg font-bold text-gray-800 ml-4">
+                      {item.title}
+                    </h3>
+                  </div>
+                  <p className="text-gray-600 text-sm sm:text-base leading-relaxed">
+                    {item.description}
+                  </p>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+
+          {/* Donation Methods */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {/* QR Code Section */}
             <Card className="shadow-xl border-0">
@@ -80,7 +135,13 @@ export default function PaymentPage() {
                     <span className="font-mono text-sm sm:text-lg text-center">
                       ramayanvediceducational@indianbk
                     </span>
-                    <Button size="sm" variant="outline" onClick={() => copyToClipboard("ramayanvediceducational@indianbk")}>
+                    <Button
+                      size="sm"
+                      variant="outline"
+                      onClick={() =>
+                        copyToClipboard("ramayanvediceducational@indianbk")
+                      }
+                    >
                       <Copy className="h-4 w-4" />
                     </Button>
                   </div>
@@ -90,7 +151,10 @@ export default function PaymentPage() {
                   <h3 className="font-semibold text-gray-800">समर्थित UPI ऐप्स:</h3>
                   <div className="grid grid-cols-2 gap-3">
                     {["Google Pay", "PhonePe", "Paytm", "BHIM"].map((app) => (
-                      <div key={app} className="bg-white p-3 rounded-lg shadow text-center text-sm font-medium">
+                      <div
+                        key={app}
+                        className="bg-white p-3 rounded-lg shadow text-center text-sm font-medium"
+                      >
                         {app}
                       </div>
                     ))}
@@ -120,7 +184,11 @@ export default function PaymentPage() {
                     <h3 className="font-semibold text-gray-800 mb-1">खाता संख्या:</h3>
                     <div className="flex items-center justify-between">
                       <span className="font-mono text-sm sm:text-lg">1234567890123456</span>
-                      <Button size="sm" variant="outline" onClick={() => copyToClipboard("1234567890123456")}>
+                      <Button
+                        size="sm"
+                        variant="outline"
+                        onClick={() => copyToClipboard("1234567890123456")}
+                      >
                         <Copy className="h-4 w-4" />
                       </Button>
                     </div>
@@ -132,7 +200,11 @@ export default function PaymentPage() {
                     <h3 className="font-semibold text-gray-800 mb-1">IFSC कोड:</h3>
                     <div className="flex items-center justify-between">
                       <span className="font-mono text-sm sm:text-lg">SBIN0001234</span>
-                      <Button size="sm" variant="outline" onClick={() => copyToClipboard("SBIN0001234")}>
+                      <Button
+                        size="sm"
+                        variant="outline"
+                        onClick={() => copyToClipboard("SBIN0001234")}
+                      >
                         <Copy className="h-4 w-4" />
                       </Button>
                     </div>
@@ -154,7 +226,7 @@ export default function PaymentPage() {
             </CardContent>
           </Card>
 
-          {/* Contact for Payment Confirmation */}
+          {/* Contact Confirmation */}
           <Card className="shadow-xl border-0 mt-8 bg-gradient-to-r from-saffron-500 to-orange-500 text-white">
             <CardContent className="p-6 sm:p-8 text-center">
               <h3 className="text-xl sm:text-2xl font-bold mb-4">भुगतान की पुष्टि के लिए</h3>
