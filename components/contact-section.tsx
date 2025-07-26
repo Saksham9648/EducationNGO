@@ -196,8 +196,8 @@ export default function ContactSection() {
               <CardContent className="p-8 text-center">
                 <h3 className="text-2xl font-bold mb-4">कार्यालय समय</h3>
                 <div className="space-y-2">
-                  <p>सोमवार - शुक्रवार: 9:00 AM - 6:00 PM</p>
-                  <p>शनिवार: 9:00 AM - 2:00 PM</p>
+                  <p>सोमवार - शनिवार: प्रातः04:00 बजे से 4:00 बजे तक</p>
+                  {/* <p>शनिवार: 9:00 AM - 2:00 PM</p> */}
                   <p>रविवार: बंद</p>
                 </div>
               </CardContent>
