@@ -66,7 +66,7 @@ export default function PaymentPage() {
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-10 px-2">
             <h2 className="text-2xl sm:text-4xl font-bold text-gray-800 mb-3">
-              दान करें और धर्म में योगदान दें
+              सनातन धर्म शिक्षा के लिए दान दे
             </h2>
             <p className="text-base sm:text-xl text-gray-600">
               वैदिक शिक्षा के प्रसार में हमारा साथ दें
@@ -177,17 +177,17 @@ export default function PaymentPage() {
                 <div className="space-y-4">
                   <div className="bg-saffron-50 p-4 rounded-lg">
                     <h3 className="font-semibold text-gray-800 mb-1">खाता नाम:</h3>
-                    <p className="text-base sm:text-lg">वैदिक शिक्षा संस्थान</p>
+                    <p className="text-base sm:text-lg">रामायण वैदिक एजुकेशन फाउंडेशन</p>
                   </div>
 
                   <div className="bg-saffron-50 p-4 rounded-lg">
                     <h3 className="font-semibold text-gray-800 mb-1">खाता संख्या:</h3>
                     <div className="flex items-center justify-between">
-                      <span className="font-mono text-sm sm:text-lg">1234567890123456</span>
+                      <span className="font-mono text-sm sm:text-lg">7728397001</span>
                       <Button
                         size="sm"
                         variant="outline"
-                        onClick={() => copyToClipboard("1234567890123456")}
+                        onClick={() => copyToClipboard("7728397001")}
                       >
                         <Copy className="h-4 w-4" />
                       </Button>
@@ -199,11 +199,11 @@ export default function PaymentPage() {
                   <div className="bg-saffron-50 p-4 rounded-lg">
                     <h3 className="font-semibold text-gray-800 mb-1">IFSC कोड:</h3>
                     <div className="flex items-center justify-between">
-                      <span className="font-mono text-sm sm:text-lg">SBIN0001234</span>
+                      <span className="font-mono text-sm sm:text-lg">IDIB000L554</span>
                       <Button
                         size="sm"
                         variant="outline"
-                        onClick={() => copyToClipboard("SBIN0001234")}
+                        onClick={() => copyToClipboard("IDIB000L554")}
                       >
                         <Copy className="h-4 w-4" />
                       </Button>
@@ -236,7 +236,7 @@ export default function PaymentPage() {
               <div className="flex flex-col sm:flex-row gap-4 justify-center items-center text-sm sm:text-base">
                 <div className="flex items-center">
                   <Smartphone className="h-5 w-5 mr-2" />
-                  <span>+91 98765 43210</span>
+                  <span>+91 7307214280</span>
                 </div>
                 <div className="flex items-center">
                   <CreditCard className="h-5 w-5 mr-2" />
