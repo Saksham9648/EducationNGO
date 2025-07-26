@@ -84,7 +84,7 @@ export default function Footer() {
             <div className="space-y-3">
               <div className="flex items-center space-x-3">
                 <Phone className="h-4 w-4 text-saffron-400" />
-                <span className="text-gray-300">+91 7307214280</span>
+                <span className="text-gray-300">+91 98765 43210</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="h-4 w-4 text-saffron-400" />
@@ -93,13 +93,16 @@ export default function Footer() {
               <div className="flex items-start space-x-3">
                 <MapPin className="h-4 w-4 text-saffron-400 mt-1" />
                 <span className="text-gray-300">
-                  रामायण भवन
+                 रामायण भवन
                   <br />
-                  रामायण वैदिक एजुकेशन फाउंडेशन
+                 रामायण वैदिक एजुकेशन फाउंडेशन
+                 <br />
+                 उत्तर प्रदेश राज्य औद्योगिक विकास प्राधिकरण के
                   <br />
-                  उत्तर प्रदेश राज्य औद्योगिक विकास प्राधिकरण के सामने , नक्षत्र गार्डन, गोला रोड
+                  सामने , नक्षत्र गार्डन, गोला रोड
                   <br />
                   लखीमपुर खीरी २६२७०१
+
                 </span>
               </div>
             </div>
