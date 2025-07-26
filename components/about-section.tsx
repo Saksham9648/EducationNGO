@@ -44,6 +44,35 @@ export default function AboutSection() {
           </p>
         </div>
 
+        {/* Founders Info */}
+        <div className="text-center mb-16 grid md:grid-cols-2 gap-8 items-center justify-center">
+          <div>
+            <img
+              src="/fo1.jpg"
+              alt="संस्थापक डॉ. रामकुमार शर्मा"
+              className="mx-auto rounded-md h-40 w-40 object-cover mb-4 shadow-md"
+            />
+            <h3 className="text-2xl font-semibold text-gray-800">स्वराज्य प्रकाश</h3>
+            <p className="text-gray-600 text-lg mt-2 max-w-md mx-auto">
+              बैकुंठ वाशी श्री स्वराज्य प्रकाश (शिक्षक) संस्थापक श्री रामायण वैदिक एजुकेशन फाउंडेशन
+
+            </p>
+          </div>
+
+          <div>
+            <img
+              src="/fo2.jpg"
+              alt="संस्थापक आचार्य अजय द्विवेदी"
+              className="mx-auto rounded-md h-40 w-40 object-cover mb-4 shadow-md"
+            />
+            <h3 className="text-2xl font-semibold text-gray-800">शान्ति देवी</h3>
+            <p className="text-gray-600 text-lg mt-2 max-w-md mx-auto">
+              बैकुंठ वाशी श्रीमती शान्ति देवी ( शिक्षक) संस्थापक श्री रामायण वैदिक एजुकेशन फाउंडेशन
+
+            </p>
+          </div>
+        </div>
+
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {aboutItems.map((item, index) => (
             <Card key={index} className="group hover:shadow-xl transition-all duration-300 border-0 shadow-lg">
