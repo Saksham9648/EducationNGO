@@ -69,7 +69,7 @@ export default function AdminLoginPage() {
                   value={credentials.email}
                   onChange={(e) => setCredentials({ ...credentials, email: e.target.value })}
                   required
-                  placeholder="admin@vedic-ngo.org"
+                  placeholder=""
                   className="pl-10 border-gray-300 focus:border-saffron-500"
                 />
               </div>
@@ -84,7 +84,7 @@ export default function AdminLoginPage() {
                   value={credentials.password}
                   onChange={(e) => setCredentials({ ...credentials, password: e.target.value })}
                   required
-                  placeholder="पासवर्ड दर्ज करें"
+                  placeholder=""
                   className="pl-10 border-gray-300 focus:border-saffron-500"
                 />
               </div>
