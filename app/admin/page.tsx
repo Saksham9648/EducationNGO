@@ -99,15 +99,7 @@ export default function AdminLoginPage() {
             </Button>
           </form>
 
-          <div className="mt-6 text-center">
-            <p className="text-sm text-gray-500">
-              डेमो क्रेडेंशियल्स:
-              <br />
-              Email: admin@vedic-ngo.org
-              <br />
-              Password: VedicAdmin@2024
-            </p>
-          </div>
+          
         </CardContent>
       </Card>
     </div>
