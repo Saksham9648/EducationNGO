@@ -240,7 +240,7 @@ export default function PaymentPage() {
                 </div>
                 <div className="flex items-center">
                   <CreditCard className="h-5 w-5 mr-2" />
-                  <span>info@vedic-ngo.org</span>
+                  <span>ramayanvedicngo@gmail.com</span>
                 </div>
               </div>
             </CardContent>
