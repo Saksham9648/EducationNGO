@@ -212,7 +212,7 @@ export default function PaymentPage() {
 
                   <div className="bg-saffron-50 p-4 rounded-lg">
                     <h3 className="font-semibold text-gray-800 mb-1">बैंक का नाम:</h3>
-                    <p className="text-base sm:text-lg">भारतीय स्टेट बैंक</p>
+                    <p className="text-base sm:text-lg">इंडियन बैंक</p>
                   </div>
                 </div>
               </div>
