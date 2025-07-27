@@ -166,8 +166,8 @@ export default function ContactSection() {
                     </div>
                     <div>
                       <h4 className="font-semibold text-gray-800">ईमेल</h4>
-                      <p className="text-gray-600">info@vedic-ngo.org</p>
-                      <p className="text-gray-600">contact@vedic-ngo.org</p>
+                      <p className="text-gray-600">ramayanvedicngo@gmail.com</p>
+{/*                       <p className="text-gray-600">contact@vedic-ngo.org</p> */}
                     </div>
                   </div>
 
